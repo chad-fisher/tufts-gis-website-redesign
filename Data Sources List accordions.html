@@ -1,0 +1,100 @@
+Data Sources List accordions 
+
+<html>
+
+[expand title="▸ Data by Subject" tag="h6" swaptitle="▾ Data by Subject" rel="main-highlander" targclass="graybackground"]
+    [expandsub1 title="▸ Agriculture" tag="h7" swaptitle="▾ Agriculture" rel=”this-highlander]
+        <h6><a href="http://kids.fao.org/agromaps/" target="_blank" rel="noopener">Global Spatial Database of Agricultural Land-use Statistics</a></h6>
+        <p>Contains data for many different agricultural products, e.g., rice and maize, throughout the world broken down by country's state level. Data are from 1980s until present.</p>
+        <h6><a href="http://www.nass.usda.gov/" target="_blank" rel="noopener">National Agricultural Statistics Service</a> (US)</h6>
+        <p>The main site for current and historical agricultural statistics. Hard to find GIS data per se, but again, tabular data can be downloaded by state and county.</p>
+
+        <p>NASS is producing <b><a href="http://nassgeodata.gmu.edu/CropScape/" target="_blank" rel="noopener">CropScape</a></b>- a satellite derived GIS raster data set for cropland cover in the US.</p>
+
+        <h6><a href="http://datagateway.nrcs.usda.gov/" target="_blank" rel="noopener">Natural Resources Conservation Service (USDA) Geospatial Gateway</a></h6>
+        <p>Interactive map gateway to ordering USDA data including soils, precipitation, temperature, and orthphotos (including National Agriculture Imagery Photography - NAIP - products).</p>
+
+        <h6><a name="Agriculture-U.S.CensusofAgriculture"></a><a class="external-link" href="http://www.agcensus.usda.gov/index.asp" rel="nofollow">U.S. Census of Agriculture</a></h6>
+
+        <p>The US Census of Agriculture takes place every five years and reports agricultural data aggregated by county and state.</p>
+
+        <p>We haven't tested out the 2007 Census of Agriculture query tools extensively yet for compatibility with GIS, but the general concept holds that you will get data by county in a spreadsheet or .CSV format and should then in principle be able to join that data with a county boundary GIS data set.</p>
+
+        <p>The 2002 Census of Agriculture information is available for download into GIS formatted tables. Instructions:</p>
+
+        <p>1. Go to <a href="http://www.agcensus.usda.gov/Publications/2002/index.php" target="_blank" rel="noopener">2002 Census of Agriculture Query by State and County site</a></p>
+
+        <p>2. Select the data that you want and the geographical area you are interested in. Once you have made your selections, hit the get data tab.</p>
+
+        <p>3. At the end of the table that results, there is an option to "Click here for a GIS version of this output." On the next screen you must choose download dbf, txt, or all GIS files. Getting the DBF file will provide a table that includes the State and County FIPS codes combined. This can be joined to US county boundary files (One source for the county boundary files with basic Agricultural Census data is at the National Atlas site - read the note below).</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Biodiversity" tag="h7" swaptitle="▾ Biodiversity" rel=”this-highlander]
+        <h6><a href="http://www.gbif.org/" target="_blank" rel="noopener">Global Biodiversity Facility</a></h6>
+        <p>From the web site: "The GBIF Network already provides access to over 40 million records of occurrences of different organisms. Many of these relate to specimens in natural history museums and herbaria around the world, or to living cultures of micro-organisms, but at least a third come from observations of wild organisms. Wherever possible these records include information about the locality where the organisms were found and are used to generate maps of the distribution of these occurrences. Counts of occurrence records are listed against the organism names to which they apply. For genera and taxa of higher ranks, these counts include only those occurrences which have been identified to the taxon concerned. For species these counts include all occurrences for the species and also for any included infraspecific taxa, as well as for any known synonyms."</p>
+
+        <h6><a href="http://www.natureserve.org/" target="_blank" rel="noopener">NatureServe</a></h6>
+        <p>Animal and plant distribution GIS data downloads, as well as a wide range of other information and data from NatureServe, a non-profit that works to collect and distribute information for a network of heritage programs and conservation data centers around the world. Go to the Get Data link.</p>
+
+        <h6><b>Other efforts to digitize and georeference museum collection specimens:</b></h6>
+        <ul><li>
+        <h6><a href="http://www.fishnet2.net/index.html" target="_blank" rel="noopener">Fishnet (Fish Network Information System)</a></h6>
+        </li><li>
+        <h6><a href="http://manisnet.org/" target="_blank" rel="noopener">MaNIS (Mammal Network Information System)</a></h6>
+        </li><li>
+        <h6><a href="http://www.ornisnet.org/" rel="nofollow">ORNIS (Ornithological Network Information System)</a></h6>
+        </li><li>
+        <h6><a href="http://herpnet.org/" target="_blank" rel="noopener">HerpNet (Herpetological Network) - reptiles and amphibians</a></h6>
+        </li><li>
+        <h6><a href="http://www.iobis.org/" target="_blank" rel="noopener">OBIS (Ocean Biogeographic Information System) - for marine animals and plants</a></h6>
+        </li></ul>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Business" tag="h7" swaptitle="▾ Business" rel=”this-highlander]
+        <p>Business data can be bought from many private data providers. Free business data is harder to come by but here are some resources, some free and some available to universities and colleges with subscriptions:</p>
+        <h6><a href="https://www.data.gov/" target="_blank" rel="noopener">Data.Gov</a></h6>
+        <p>Check out the Finance link - specifically for geographic data, but most of it is not free.</p>
+        <h6><a href="http://www.referenceusa.com/Home/Home" target="”_blank”" rel="noopener">Reference USA</a></h6>
+        <p>A database of 14 million U.S. businesses containing verified data, updated monthly. Search by business name and type, executive title, sales volume, year established and more. "HealthCare" provides detailed information about physicians and dentists. Note that you can geocode the businesses/health care providers using the address field, or you can download the "detailed" version of the data and use the Latitutude/Longitude coordinates provided. Note that you will likely get a more accurately located point if you digitized against a local street centerline or parcel GIS layer if one is available.</p>
+        <p>Tufts Library has a subscription: Go to the <a href="http://www.library.tufts.edu/resourceDB/" target="”_blank”" rel="noopener">Tufts Library Database Finder</a> and type in "Reference USA".</p>
+        <h6><a href="http://www.census.gov/econ/index.html" target="”_blank”" rel="noopener">US Census Bureau - Business and Industry Data</a></h6>
+        <p>See also the various State Data Centers that process and distribute census population and economic data as well as other business/finance data - the Census Bureau has a list of these <a href="http://www.census.gov/sdc/" target="”_blank”" rel="noopener">State Data Centers</a> or you can do a web search for "state data center" and the name of the state in which you are interested.</p>
+        <h6><a href="http://www.usa.gov/Business/Business_Data.shtml" target="”_blank”" rel="noopener">USA.gov - Business Data and Statistics</a></h6>
+        <p>Not GIS specific, but links to many data portals</p>
+        <p><span style="color: #800000"><b>Important!</b></span> Always check with the library reference librarians for other data sources - they have a wealth of experience in helping you find data, and business data can usually be geocoded by address, zip code, or county name.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Census (including historical)" tag="h7" swaptitle="▾ Census (including historical)" rel=”this-highlander]
+        <h6>Census Overviews</h6>
+        <p>The main US Census Bureau site is at <a class="external-link" href="http://www.census.gov" target="”_blank”" rel="noopener">http://www.census.gov</a>.</p>
+        <h6>Accessing 2000 and 2010 Census Data</h6>
+        <p>When using Census information in GIS, you need to have both <b>geographic boundary files (e.g., census tracts)</b> and <b>the census data (attribute tables)</b> that join to those boundary files.</p>
+        <h6>The Tabular Attribute Data</h6>
+        <p>Please follow these instructions to download 2010 and 2000 data from the census: <a href="https://sites.tufts.edu/gisclone/files/2013/11/Census-Tutorial_Downloading-and-Mapping-American-FactFinder2-Tract-Data2.pdf" target="”_blank”" rel="noopener">Census Tutorial: Downloading and Mapping American FactFinder Data</a>.</p>
+        <p>Data available depend on the year. After 2000, estimates are collected and published depending on the how big the population of area is. Please see <a href="http://www.census.gov/acs/www/" target="”_blank”" rel="noopener">American Community Survey</a> for estimate schedules. For the years 2000 and 1990, data typically come from either the 100% census (SF1 and SF2) or from the sample "long form" sent one out of every several households (SF3 and SF4). The 100% SF1 data has basic demographic information on population counts, age, gender, race, ethnicity, and household/family relationships. The sample SF3 data contains a wealth of more detailed information including income, employment, education, transportation to work, language, and ancestry.</p>
+        <h6>For Census Geography Boundary Files</h6>
+        <ul><li>Cartographic boundary files from the <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html" target="”_blank”" rel="noopener">2010 TIGER/Line Shapefiles Main Page</a>. This is a good place to get the Zip Code Tabulation Area boundaries, but make sure you read about them first - ZCTAs are not the same thing as Zip Codes. See this ZCTA description site from the Census Bureau.</li></ul>
+        <h6>Accessing Historical Census Data</h6>
+        <ul><li><b><a href="http://www.nhgis.org/" target="_blank">National Historic GIS Project</a></b> is a project to digitize and distribute aggregated census data for US Censuses 1790-2000. Also included are boundary GIS shape files for previous censuses. An invaluable site for historic research in US. Easy to use interface.</li><li><b><a href="http://usa.ipums.org/usa/" target="”_blank”" rel="noopener">IPUMS USA</a></b>
+        <p>Integrated Public Use Microdata (Minnesota Population Center, University of Minnesota) is very good site with census samples from different years, information about previous censuses, including enumeration forms ( the questions asked) and lists of variables for all US censuses. Also has an international section.</p></li><li><b><a href="http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/3" target="”_blank”" rel="noopener">ICPSR Historical, Demographic, Economic, and Social Data: The United States, 1790-1970</a></b>
+        <p>Tufts University (and many other university researchers) can download historical US census data from this site.&nbsp; Note this site is for experienced users. See the university reference librarian for assistance. To view data from this series, see the Historic Census Browser from the University of Virgnia described above.</p></li></ul>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Climate Change and Bio-geochemical Dynamics" tag="h7" swaptitle="▾ Climate Change and Bio-geochemical Dynamics" rel=”this-highlander]
+        <h6><a href="http://www.climatewizard.org/" target="_blank">Climate Wizard</a></h6>
+        <p>Access to worldwide climate data and IPCC scenarios in an online mapping system and as GIS data downloads. From the web site: "Climate Wizard enables technical and non-technical audiences alike to access leading climate change information and visualize the impacts anywhere on Earth" - developed by the Nature Conservancy, Univ. of Washington, and Univ. of Southern Mississippi. GIS users - please see data citation requirements on the "About Us" link.</p>
+        <h6><a href="http://www.gisclimatechange.org/" target="blank">GIS Climate Change Scenarios - NCAR</a></h6>
+        <p>From the web site: "This GIS data portal provides access to free global datasets of climate change scenarios generated for the 4th Assessment Report of the Intergovernmental Panel on Climate Change (IPCC) by the Community Climate System Model (CCSM). The datasets can be downloaded in a common GIS format (i.e., shapefiles) or text file format". See also the <b>Intergovernmental Panel on Climate Change - Data Distribution Center</b> - <a class="external-link" href="http://www.ipcc-data.org/" rel="nofollow">http://www.ipcc-data.org/</a>.</p>
+        <h6><a href="http://www.gis.ucar.edu/" target="_blank">National Center for Atmospheric Research (NCAR) - NCAR GIS Initiative</a></h6>
+        <p>From the web site: "The Geographic Information Systems (GIS) Strategic Initiative at the National Center for Atmospheric Research (NCAR) is an interdisciplinary effort to foster collaborative science, spatial data interoperability, and knowledge sharing with GIS." Look at the tutorials link for tutorials about how to import netCDF data (widely used in the atmospheric sciences, into ArcGIS 9.2.</p>
+        <h6><a href="http://www.ncdc.noaa.gov/oa/ncdc.html" target="_blank">National Climate Data Center (NOAA)</a></h6>
+        <p>From the web site: "world's largest archive of weather data" - not all specifically GIS, but some of it can be used in GIS programs. Go to NCDC CLIMAPS site to download ESRI Shape files of North American climate data.</p>
+        <h6><a href="http://prism.oregonstate.edu/" target="_blank">PRISM (Oregon State University)</a></h6>
+        <p>From the web site: "This OSU PRISM Group web site provides access to the highest-quality spatial climate data sets currently available. These data sets were created using the PRISM climate mapping system, developed by Dr. Christopher Daly, PRISM Group director. PRISM is unique in that it incorporates a spatial climate knowledge base that accounts for rain shadows, temperature inversions, coastal effects, and more in the climate mapping process."</p>
+        <h6><a name="ClimateChangeandBiogeochemicalDynamics-"></a><span style="color: #888888;"><em>National Weather Service Data Available in GIS Format - NOAA</em></span></h3>
+        <h6><a href="http://woodshole.er.usgs.gov/project-pages/cvi/" target="_blank">National Assessment of Coastal Vulnerability to Sea Level Rise</a> (USGS Woods Hole Field Center)</h4>
+        <p>Includes links to a preliminary GIS data set that attempts to give a national overview of coastal vulnerability to sea level rise, plus a number of reports and regional studies.</p>
+    [/expandsub1]
+[/expand]
+
+</html>
