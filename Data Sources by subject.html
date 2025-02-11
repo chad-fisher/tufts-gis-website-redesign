@@ -1,0 +1,558 @@
+Data Sources List accordions by Subject
+<!-- I have done the actual coding and editing in an .html doc in Positron or another text editor to make things easier since editing in wordpress is a nightmare -->
+<!-- Check the Geospatial Data Science Specialist folder for the codes -->
+
+[expand title="▸ Data by Subject" tag="h6" swaptitle="▾ Data by Subject" rel="main-highlander" targclass="graybackground"]  
+    [expandsub1 title="▸ Agriculture" tag="h7" swaptitle="▾ Agriculture" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://kids.fao.org/agromaps/" target="_blank" rel="noopener">Global Spatial Database of Agricultural
+                Land-use Statistics</a></h6>
+        <p>Contains data for many different agricultural products, e.g., rice and maize, throughout the world broken down by
+            country's state level. Data are from 1980s until present.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.nass.usda.gov/" target="_blank" rel="noopener">National Agricultural Statistics Service</a> (US)
+        </h6>
+        <p>The main site for current and historical agricultural statistics. Hard to find GIS data per se, but again, tabular
+            data can be downloaded by state and county.</p>
+        
+        <p>NASS is producing <b><a href="http://nassgeodata.gmu.edu/CropScape/" target="_blank"
+                    rel="noopener">CropScape</a></b>- a satellite derived GIS raster data set for cropland cover in the US.</p>
+        
+        <h6 style="font-weight:bold;"><a href="http://datagateway.nrcs.usda.gov/" target="_blank" rel="noopener">Natural Resources Conservation Service
+                (USDA) Geospatial Gateway</a></h6>
+        <p>Interactive map gateway to ordering USDA data including soils, precipitation, temperature, and orthphotos (including
+            National Agriculture Imagery Photography - NAIP - products).</p>
+        
+        <h6 style="font-weight:bold;"><a name="Agriculture-U.S.CensusofAgriculture"></a><a class="external-link"
+                href="http://www.agcensus.usda.gov/index.asp" rel="nofollow">U.S. Census of Agriculture</a></h6>
+        
+        <p>The US Census of Agriculture takes place every five years and reports agricultural data aggregated by county and
+            state.</p>
+        
+        <p>We haven't tested out the 2007 Census of Agriculture query tools extensively yet for compatibility with GIS, but the
+            general concept holds that you will get data by county in a spreadsheet or .CSV format and should then in principle
+            be able to join that data with a county boundary GIS data set.</p>
+        
+        <p>The 2002 Census of Agriculture information is available for download into GIS formatted tables. Instructions:</p>
+        
+        <p>1. Go to <a href="http://www.agcensus.usda.gov/Publications/2002/index.php" target="_blank" rel="noopener">2002
+                Census of Agriculture Query by State and County site</a></p>
+        
+        <p>2. Select the data that you want and the geographical area you are interested in. Once you have made your selections,
+            hit the get data tab.</p>
+        
+        <p>3. At the end of the table that results, there is an option to "Click here for a GIS version of this output." On the
+            next screen you must choose download dbf, txt, or all GIS files. Getting the DBF file will provide a table that
+            includes the State and County FIPS codes combined. This can be joined to US county boundary files (One source for
+            the county boundary files with basic Agricultural Census data is at the National Atlas site - read the note below).
+        </p>
+        [/expandsub1]
+<br>
+    [expandsub1 title="▸ Biodiversity" tag="h7" swaptitle="▾ Biodiversity" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://www.gbif.org/" target="_blank" rel="noopener">Global Biodiversity Facility</a></h6>
+        <p>From the web site: "The GBIF Network already provides access to over 40 million records of occurrences of different organisms. Many of these relate to specimens in natural history museums and herbaria around the world, or to living cultures of micro-organisms, but at least a third come from observations of wild organisms. Wherever possible these records include information about the locality where the organisms were found and are used to generate maps of the distribution of these occurrences. Counts of occurrence records are listed against the organism names to which they apply. For genera and taxa of higher ranks, these counts include only those occurrences which have been identified to the taxon concerned. For species these counts include all occurrences for the species and also for any included infraspecific taxa, as well as for any known synonyms."</p>
+
+        <h6 style="font-weight:bold;"><a href="http://www.natureserve.org/" target="_blank" rel="noopener">NatureServe</a></h6>
+        <p>Animal and plant distribution GIS data downloads, as well as a wide range of other information and data from NatureServe, a non-profit that works to collect and distribute information for a network of heritage programs and conservation data centers around the world. Go to the Get Data link.</p>
+
+        <h6 style="font-weight:bold;"><b>Other efforts to digitize and georeference museum collection specimens:</b></h6>
+        <ul><li>
+        <h6 style="font-weight:bold;"><a href="http://www.fishnet2.net/index.html" target="_blank" rel="noopener">Fishnet (Fish Network Information System)</a></h6>
+        </li><li>
+        <h6 style="font-weight:bold;"><a href="http://manisnet.org/" target="_blank" rel="noopener">MaNIS (Mammal Network Information System)</a></h6>
+        </li><li>
+        <h6 style="font-weight:bold;"><a href="http://www.ornisnet.org/" rel="nofollow">ORNIS (Ornithological Network Information System)</a></h6>
+        </li><li>
+        <h6 style="font-weight:bold;"><a href="http://herpnet.org/" target="_blank" rel="noopener">HerpNet (Herpetological Network) - reptiles and amphibians</a></h6>
+        </li><li>
+        <h6 style="font-weight:bold;"><a href="http://www.iobis.org/" target="_blank" rel="noopener">OBIS (Ocean Biogeographic Information System) - for marine animals and plants</a></h6>
+        </li></ul>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Business" tag="h7" swaptitle="▾ Business" rel=”this-highlander]
+        <p>Business data can be bought from many private data providers. Free business data is harder to come by but here are some resources, some free and some available to universities and colleges with subscriptions:</p>
+        <h6 style="font-weight:bold;"><a href="https://www.data.gov/" target="_blank" rel="noopener">Data.Gov</a></h6>
+        <p>Check out the Finance link - specifically for geographic data, but most of it is not free.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.referenceusa.com/Home/Home" target="”_blank”" rel="noopener">Reference USA</a></h6>
+        <p>A database of 14 million U.S. businesses containing verified data, updated monthly. Search by business name and type, executive title, sales volume, year established and more. "HealthCare" provides detailed information about physicians and dentists. Note that you can geocode the businesses/health care providers using the address field, or you can download the "detailed" version of the data and use the Latitutude/Longitude coordinates provided. Note that you will likely get a more accurately located point if you digitized against a local street centerline or parcel GIS layer if one is available.</p>
+        <p>Tufts Library has a subscription: Go to the <a href="http://www.library.tufts.edu/resourceDB/" target="”_blank”" rel="noopener">Tufts Library Database Finder</a> and type in "Reference USA".</p>
+        <h6 style="font-weight:bold;"><a href="http://www.census.gov/econ/index.html" target="”_blank”" rel="noopener">US Census Bureau - Business and Industry Data</a></h6>
+        <p>See also the various State Data Centers that process and distribute census population and economic data as well as other business/finance data - the Census Bureau has a list of these <a href="http://www.census.gov/sdc/" target="”_blank”" rel="noopener">State Data Centers</a> or you can do a web search for "state data center" and the name of the state in which you are interested.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.usa.gov/Business/Business_Data.shtml" target="”_blank”" rel="noopener">USA.gov - Business Data and Statistics</a></h6>
+        <p>Not GIS specific, but links to many data portals</p>
+        <p><span style="color: #800000"><b>Important!</b></span> Always check with the library reference librarians for other data sources - they have a wealth of experience in helping you find data, and business data can usually be geocoded by address, zip code, or county name.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Census (including historical)" tag="h7" swaptitle="▾ Census (including historical)" rel=”this-highlander]
+        <h6 style="font-weight:bold;">Census Overviews</h6>
+        <p>The main US Census Bureau site is at <a class="external-link" href="http://www.census.gov" target="”_blank”" rel="noopener">http://www.census.gov</a>.</p>
+        <h6 style="font-weight:bold;">Accessing 2000 and 2010 Census Data</h6>
+        <p>When using Census information in GIS, you need to have both <b>geographic boundary files (e.g., census tracts)</b> and <b>the census data (attribute tables)</b> that join to those boundary files.</p>
+        <h6 style="font-weight:bold;">The Tabular Attribute Data</h6>
+        <p>Please follow these instructions to download 2010 and 2000 data from the census: <a href="https://sites.tufts.edu/gisclone/files/2013/11/Census-Tutorial_Downloading-and-Mapping-American-FactFinder2-Tract-Data2.pdf" target="”_blank”" rel="noopener">Census Tutorial: Downloading and Mapping American FactFinder Data</a>.</p>
+        <p>Data available depend on the year. After 2000, estimates are collected and published depending on the how big the population of area is. Please see <a href="http://www.census.gov/acs/www/" target="”_blank”" rel="noopener">American Community Survey</a> for estimate schedules. For the years 2000 and 1990, data typically come from either the 100% census (SF1 and SF2) or from the sample "long form" sent one out of every several households (SF3 and SF4). The 100% SF1 data has basic demographic information on population counts, age, gender, race, ethnicity, and household/family relationships. The sample SF3 data contains a wealth of more detailed information including income, employment, education, transportation to work, language, and ancestry.</p>
+        <h6 style="font-weight:bold;">For Census Geography Boundary Files</h6>
+        <ul><li>Cartographic boundary files from the <a href="https://www.census.gov/geo/maps-data/data/tiger-line.html" target="”_blank”" rel="noopener">2010 TIGER/Line Shapefiles Main Page</a>. This is a good place to get the Zip Code Tabulation Area boundaries, but make sure you read about them first - ZCTAs are not the same thing as Zip Codes. See this ZCTA description site from the Census Bureau.</li></ul>
+        <h6 style="font-weight:bold;">Accessing Historical Census Data</h6>
+        <ul><li><b><a href="http://www.nhgis.org/" target="_blank">National Historic GIS Project</a></b> is a project to digitize and distribute aggregated census data for US Censuses 1790-2000. Also included are boundary GIS shape files for previous censuses. An invaluable site for historic research in US. Easy to use interface.</li><li><b><a href="http://usa.ipums.org/usa/" target="”_blank”" rel="noopener">IPUMS USA</a></b>
+        <p>Integrated Public Use Microdata (Minnesota Population Center, University of Minnesota) is very good site with census samples from different years, information about previous censuses, including enumeration forms ( the questions asked) and lists of variables for all US censuses. Also has an international section.</p></li><li><b><a href="http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/3" target="”_blank”" rel="noopener">ICPSR Historical, Demographic, Economic, and Social Data: The United States, 1790-1970</a></b>
+        <p>Tufts University (and many other university researchers) can download historical US census data from this site.&nbsp; Note this site is for experienced users. See the university reference librarian for assistance. To view data from this series, see the Historic Census Browser from the University of Virgnia described above.</p></li></ul>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Climate Change and Bio-geochemical Dynamics" tag="h7" swaptitle="▾ Climate Change and Bio-geochemical Dynamics" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://www.climatewizard.org/" target="_blank">Climate Wizard</a></h6>
+        <p>Access to worldwide climate data and IPCC scenarios in an online mapping system and as GIS data downloads. From the web site: "Climate Wizard enables technical and non-technical audiences alike to access leading climate change information and visualize the impacts anywhere on Earth" - developed by the Nature Conservancy, Univ. of Washington, and Univ. of Southern Mississippi. GIS users - please see data citation requirements on the "About Us" link.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.gisclimatechange.org/" target="blank">GIS Climate Change Scenarios - NCAR</a></h6>
+        <p>From the web site: "This GIS data portal provides access to free global datasets of climate change scenarios generated for the 4th Assessment Report of the Intergovernmental Panel on Climate Change (IPCC) by the Community Climate System Model (CCSM). The datasets can be downloaded in a common GIS format (i.e., shapefiles) or text file format". See also the <b>Intergovernmental Panel on Climate Change - Data Distribution Center</b> - <a class="external-link" href="http://www.ipcc-data.org/" rel="nofollow">http://www.ipcc-data.org/</a>.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.gis.ucar.edu/" target="_blank">National Center for Atmospheric Research (NCAR) - NCAR GIS Initiative</a></h6>
+        <p>From the web site: "The Geographic Information Systems (GIS) Strategic Initiative at the National Center for Atmospheric Research (NCAR) is an interdisciplinary effort to foster collaborative science, spatial data interoperability, and knowledge sharing with GIS." Look at the tutorials link for tutorials about how to import netCDF data (widely used in the atmospheric sciences, into ArcGIS 9.2.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ncdc.noaa.gov/oa/ncdc.html" target="_blank">National Climate Data Center (NOAA)</a></h6>
+        <p>From the web site: "world's largest archive of weather data" - not all specifically GIS, but some of it can be used in GIS programs. Go to NCDC CLIMAPS site to download ESRI Shape files of North American climate data.</p>
+        <h6 style="font-weight:bold;"><a href="http://prism.oregonstate.edu/" target="_blank">PRISM (Oregon State University)</a></h6>
+        <p>From the web site: "This OSU PRISM Group web site provides access to the highest-quality spatial climate data sets currently available. These data sets were created using the PRISM climate mapping system, developed by Dr. Christopher Daly, PRISM Group director. PRISM is unique in that it incorporates a spatial climate knowledge base that accounts for rain shadows, temperature inversions, coastal effects, and more in the climate mapping process."</p>
+        <h6 style="font-weight:bold;"><a name="ClimateChangeandBiogeochemicalDynamics-"></a><span style="color: #888888;"><em>National Weather Service Data Available in GIS Format - NOAA</em></span></h6>
+        <h6 style="font-weight:bold;"><a href="http://woodshole.er.usgs.gov/project-pages/cvi/" target="_blank">National Assessment of Coastal Vulnerability to Sea Level Rise</a> (USGS Woods Hole Field Center)</h6>
+        <p>Includes links to a preliminary GIS data set that attempts to give a national overview of coastal vulnerability to sea level rise, plus a number of reports and regional studies.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Coastal Zone and Marine Data" tag="h7" swaptitle="▾ Coastal Zone and Marine Data" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://woodshole.er.usgs.gov/project-pages/cvi/" target="_blank">National Assessment of Coastal Vulnerability to Sea Level Rise (USGS Woods Hole Field Center)</a></h6>
+        <p>Includes links to a preliminary GIS data set that attempts to give a national overview of coastal vulnerabiliy to sea level rise, plus a number of reports and regional studies.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.reefbase.org/" target="_blank">Reefbase</a></h6>
+        <p>A clearinghouse of information regarding coral reefs. From the web site: "ReefBase is the official database of the Global Coral Reef Monitoring Network (GCRMN), as well as the International Coral Reef Action Network (ICRAN). See links to "GIS and Maps" to access downloadable data.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.oceanservice.noaa.gov/welcome.html" target="_blank">US NOAA National Ocean Service</a></h6>
+        <p>Go to Data Explorer link for data set descriptions and download - data on coastal zone habitats, vulnerability, oil spills, natural hazards, and coastal mapping.</p>
+        <h6 style="font-weight:bold;"><a href="http://coastalmap.marine.usgs.gov/" target="_blank">USGS Coastal and Marine Geology Program - Internet Map Server and GIS Data</a></h6>
+        <p>This site has both internet map servers for the coastal regions of the US and, if you go to the various data catalog links, to downloadable GIS data.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Education" tag="h7" swaptitle="▾ Education" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://nces.ed.gov/ccd/index.asp" target="_blank">National Center for Education Statistics - Common Core of Data</a></h6>
+        <p>Tabular data for schools across the nation, including address tables in Microsoft Access tables that can be brought into GIS via address-matching. But note they also have a "locale" data set with longitude and latitude information already geocoded (under the Data Resources - Data Files link).</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Elevation Data" tag="h7" swaptitle="▾ Elevation Data" rel=”this-highlander]
+        <h6 style="font-weight:bold;">Massachusetts</h6>
+        <p><a href="http://www.mass.gov/anf/research-and-tech/it-serv-and-support/application-serv/office-of-geographic-information-massgis/datalayers/lidar.html" target="_blank">MassGIS Data - LiDAR Terrain Data</a> Contains the latest datasets of Light Detection and Ranging (LiDAR) terrain files covering most of eastern Massachusetts.</p>
+        <h6 style="font-weight:bold;">US Elevation Data</h6>
+        <p><a href="http://ned.usgs.gov/" target="_blank">USGS - National Elevation Data Set</a> for the US, this is the primary source of digital elevation models, including SRTM data (for the US only - for international SRTM data, see the links described in the SRTM section below). Note some US states will have elevation data available at even higher resolution (e.g., MassGIS has a 5m DEM, plus contour lines), so check with the state clearinghouse as well.</p>
+        <h6 style="font-weight:bold;">Global Elevation Data</h6>
+        <h6 style="font-weight:bold;"><a href="https://lta.cr.usgs.gov/GTOPO30" target="_blank">GTOPO</a></h6>
+        <p>GTOPO has 1 km x 1km digital elevation models available for the entire world. These are 1 km digital elevation models - not high resolution but good for creating generalized maps of large regions and continents - created from paper maps.</p>
+        <h6 style="font-weight:bold;"><a href="http://asterweb.jpl.nasa.gov/gdem.asp" target="_blank"></a>ASTER Global DEM Data</h6>
+        <p>Aster Global Digital Elevation Model Map - this is a 30m DEM product, made freely available through a joint US-Japan program using the Aster satellite sensor. The web site has instructions for how to download.</p>
+        <h6 style="font-weight:bold;"><a href="http://www2.jpl.nasa.gov/srtm/" target="_blank"></a>Shuttle Radar Topography Mission (SRTM) data</h6>
+        <p>SRTM data was acquired by the US Shuttle in February 2000. The data provides elevation values in a raster DEM format for most of the globe at 90m cell size. To learn about SRTM data, go to the NASA SRTM site.</p>
+        <p>The USGS distributes the SRTM data and has more information about it - <a href="https://lta.cr.usgs.gov/SRTM" target="_blank">https://lta.cr.usgs.gov/SRTM</a></p>
+        <h6 style="font-weight:bold;">The following sites have good access to international SRTM data and in the case of the Hydrosheds program, to good derived hydrographic data as well:</h6>
+        <ul><li><a href="http://hydrosheds.cr.usgs.gov/" target="_blank">USGS - Hydrosheds</a> - Digital elevation models and hydrologic base data derived from the Shuttle Radar Topography Mission and other sources at 90 meter grid cell resolution - more detailed than the Hydro 1K data, but not available for the whole world yet (as of 5/1/2007, South America, Central America, and Asia are complete). See the web site for details on how the SRTM and other data sources were processed, and for status of other areas and expected completion dates. If you are looking for DEMs for areas outside the US, this should be your first choice. If not available here, go to the CGIAR SRTM site (below)</li>
+            <li><a href="http://srtm.csi.cgiar.org/" target="_blank">CSI (Consortium for Spatial Information) </a>- CIGIAR has a very easy interface for downloading finished (void-filled) SRTM 90 meter digtial elevation models. Note, if you have trouble identifying your area on the small CGIAR map, you can click on the Google Earth SRTM KML link further down the CIGIAR page to use Google Earth to locate your data more accurately. If you download GeoTiff format files (which work well in ArcGIS), make sure to follow the directions in <a href="http://srtm.csi.cgiar.org/SRTM_FAQ.asp" target="_blank">the SRTM FAQs page</a> regarding fixing the problem with cell values of -32768. These values should be set to NO DATA. The FAQ explains what equation to use (OUTGRID = setnull(SRTMDEM == -32768, SRTMDEM) - you can use this equation in the Spatial Analyst Raster Calculator. Replace OUTGRID with the name of your new fixed SRTM tile (e.g., fix4210), and substitute the name of your original SRTM file for the "SRTMDEM" in the equation. E.g., for an SRTM called z_42_10.TIF that I downloaded, I used the following function in the Raster Calculator: <br class="atl-forced-newline">fix4210 = setnull([GISDataSources:Z_42_10.TIF] == -32768, [GISDataSources:Z_42_10.TIF] This creates a new grid, fix4210, that has all values of -32768 set to No Data, and all other values set to whatever they were in the original SRTM DEM.</li>
+            <p>Also, note that you can use the Mosaic to New Raster command under the Data Management - Raster Toolbox in ArcGIS 9 to mosaic multiple tiles to a single raster. While you're doing this, you should probably specify a projected coordinate system so that the other surface, hydro, etc. functions will work properly. |</p>
+        </ul>
+        <h6 style="font-weight:bold;">LIDAR Data</h6>
+        <a href="http://www.ncalm.org/" target="_blank">National Center for Airborne Laser Mapping (NCALM) - UC Berkeley</a> 
+        <p>An NSF funded center to support the use of LIDAR in the scientific research community. Good resources, examples, and downloads for LIDAR data used in NSF-funded projects (see the Digital Distribution Archive link).</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Energy" tag="h7" swaptitle="▾ Energy" rel=”this-highlander]
+        <p>See also <i>Climate Change and Bio-geochemical Dynamics</i> and <i>Environmental Data</i> tabs.</p>
+        <h6 style="font-weight:bold;">Energy Source Data</h6>
+        <h6 style="font-weight:bold;"><a href="http://www.nrel.gov/gis/" target="_blank">National Renewable Energy Laboratory (NREL)</a> - GIS Site</h6>
+        <p>"The National Renewable Energy Laboratory's Geographic Information System (GIS) team analyzes wind, solar, biomass, geothermal, and other energy resources and inputs the data into the GIS---Geographic Information System." The site includes downloadable GIS data (must register) as well as maps and interactive viewers.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.smu.edu/geothermal/" target="_blank">Southern Methodist University Geothermal Laboratory</a></h6>
+        <p>Research and data on geothermal energy in the US. Includes downloadable state by state geo-coded tabular data sets of drill wells with temperature, depth, etc., for estimating heat flow. Also shows the Geothermal Energy Map of North America.</p>
+        <h6 style="font-weight:bold;">Energy Generation / Consumption Data</h6>
+        <p>Energy generation and consumption data are hard to find for areas smaller than states. But more and more data is becoming available, and states and some countries are making data available by county and metro area.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.epa.gov/cleanenergy/egrid/index.htm" target="_blank">eGRID (EPA) - Emissions & Generation Resource Integrated Database</a></h6>
+        <p>Comprehensive inventory of environmental attributes of electric power systems in the US. The preeminent source of air emissions data for the electric power sector, eGRID is based on available plant-specific data for all U.S. electricity generating plants that provide power to the electric grid and report data to the U.S. government. eGRID contains air emissions data for nitrogen oxides, sulfur dioxide, carbon dioxide, and mercury. Plant facilities have latitude and longitude fields, meaning they can be brought into GIS.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.eia.doe.gov/" target="_blank">Energy Information Administration</a></h6>
+        <p>The main site for US energy statistics from the US Government (Department of Energy) - no GIS data but lots of tabular data on a variety of topics - mostly national or state level (state level can be joined to state GIS layer) - see for example, the <em>Energy Consumption, Price, and Expenditure by State</em> - <a class="external-link" href="http://www.eia.doe.gov/emeu/states/_seds.html" rel="nofollow">http://www.eia.doe.gov/emeu/states/_seds.html</a> - some tables are in Excel or CSV format, others in HTML but these can be easily brought into Excel and then into ArcGIS if joined to a state data layer. (To import a table in HTML format, save the page as html, then open it in Excel)</p>
+        <h6 style="font-weight:bold;"><a href="http://www.eia.gov/maps/layer_info-m.cfm" target="_blank">US Energy Information Administration Mapping Dataset</a></h6>
+        <p>The US energy information administration data site with GIS data layers and interactive maps for environmental data and energy use in the US.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Environmental Analysis Tools for ArcGIS" tag="h7" swaptitle="▾ Environmental Analysis Tools for ArcGIS" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://ccma.nos.noaa.gov/products/biogeography/digitizer/" target="_blank">Habitat Digitizer for ArcView 9 </a>(National Center for Coastal Ocean Science)</h6>
+        <p>Extension to aid digitizing habitat from georeferenced orthophotos and other data sets.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.spatialecology.com/" target="_blank">SpatialEcology.com</a></h6>
+        <p>This site is home to a very good and sophisticated set of ArcGIS tools written by Hawthorne Beyer called Hawth's Tools. You can download and install these tools in ArcGIS. The author has very good documentation on his web site. Some of the tools are basic (e.g., calculating area for polygons) and some are much more advanced.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Environmental Data - Facilities and Pollutants" tag="h7" swaptitle="▾ Environmental Data - Facilities and Pollutants" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://www.epa.gov/cleanenergy/egrid/index.htm" target="_blank">eGRID (EPA) - Emissions & Generation Resource Integrated Database</a></h6>
+        <p>Comprehensive inventory of environmental attributes of electric power systems in the US. The preeminent source of air emissions data for the electric power sector, eGRID is based on available plant-specific data for all U.S. electricity generating plants that provide power to the electric grid and report data to the U.S. government. eGRID contains air emissions data for nitrogen oxides, sulfur dioxide, carbon dioxide, and mercury. Plant facilities have latitude and longitude fields, meaning they can be brought into GIS.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.epa.gov/airmarkets/index.html" target="_blank">EPA - Clean Air Markets Program</a></h6>
+        <p>Market-based regulatory programs to improve air quality. The site includes GIS data and other data available for download (see the CAM Data and Maps site - <a href="http://camddataandmaps.epa.gov/gdm/" target="_blank">http://camddataandmaps.epa.gov/gdm/</a>), as well as a library of publications and progress reports.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.epa.gov/enviro/" target="_blank">EPA Enviro Facts</a></h6>
+        <p>From the Enviro Facts web site: "A single point of access to select U.S. EPA environmental data. This website provides access to several EPA databases to provide you with information about environmental activities that may affect air, water, and land anywhere in the United States. With Envirofacts, you can learn more about these environmental activities in your area or you can generate maps of environmental information."</p>
+        <h6 style="font-weight:bold;"><a name="EnvironmentalData-FacilitiesandPollutants-EPAEnviroFactsGeospatialDataDownload"></a><a class="external-link" href="http://www.epa.gov/enviro/geo_data.html" target="_blank">EPA Enviro Facts - Geospatial Data Download</a></h6>
+        <p>You can now download a single GIS shape file with point data for all the following facilities:</p>
+        <ul><li>Superfund National Priorities List (NPL)</li>
+            <li>RCRAInfo - Treatment, Storage, Disposal facilities</li>
+            <li>Toxic Release Inventory System: All reported years</li>
+            <li>NEPT - National Environmental Performance Track</li>
+            <li>Permit Compliance System (PCS) - National PollutantDischarge Elimination System (NPDES) Majors</li>
+        </ul>
+        <h6 style="font-weight:bold;"><a href="http://www.eia.doe.gov/" target="_blank">Energy Information Administration</a></h6>
+        <p>The main site for US energy statistics from the US Government (Department of Energy) - no GIS data but lots of tabular data on a variety of topics - mostly national or state level (state level can be joined to state GIS layer) - see for example, the <em>Energy Consumption, Price, and Expenditure by State</em> - <a class="external-link" href="http://www.eia.doe.gov/emeu/states/_seds.html" rel="nofollow">http://www.eia.doe.gov/emeu/states/_seds.html</a>- the tables are in HTML but these can be easily brought into Excel and then into ArcGIS if joined to a state data layer.&nbsp; (Save the page as html, then open it in Excel)</p>
+        <h6 style="font-weight:bold;"><a href="http://www.eia.gov/maps/layer_info-m.cfm" target="_blank">US Energy Information Administration Mapping Dataset</a></h6>
+        <p>The US energy information administration data site with GIS data layers and interactive maps for environmental data and energy use in the US</p>
+        <h6 style="font-weight:bold;"><a href="http://www.purdue.edu/eas/carbon/vulcan/index.php" target="_blank">Vulcan Project (Purdue University)</a></h6>
+        <p>A NASA/DOE sponsored project to quantify North American greenhouse gas emissions - data available.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Food Access and Food Security Analysis" tag="h7" swaptitle="▾ Food Access and Food Security Analysis" rel=”this-highlander]
+    <h6 style="font-weight:bold;"><a href="http://www.nyccah.org/research/mappingtoendhunger" target="_blank">Mapping to End Hunger</a>- New York City Coalition Against Hunger</h6>
+    <p>This coalition has mapped food retailers, community gardens, farmers markets, food stamp offices, WIC offices, restaurants, and a number of other variables to understand access to food in New York City. The site does not have downloadable GIS data, but it does have a very good report about the project, plus a fascinating interactive map showing all the data in PDF format. You can also download the raw data on food sources in Excel format, which offers a good example of how to format data for geocoding in Excel.</p>
+    <h6 style="font-weight:bold;"><a href="http://ers.usda.gov/foodatlas/" target="_blank">US Food Environment Atlas</a></h6>
+    <p>An online map (and downloadable Excel file) of various food access and resources data aggregated to the county level. From the US Economic Research Service at the USDA.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Forest Mapping and Analysis" tag="h7" swaptitle="▾ Forest Mapping and Analysis" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><b>US Forestry Data</b></h6>
+        <p><a href="http://www.landfire.gov/" target="_blank">Landfire</a>- US Forest Service/USGS/USDA/The Nature Conservancy - from the web site "With LANDFIRE, you can view and download<a href="http://www.landfire.gov/version_comparison.php" target="_blank">geospatial layers</a> and data products that depict the nation's major ecosystems, wildlife habitat, vegetation or canopy characteristics, landscape features, and wildland fire behavior, effects, and regimes.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.mrlc.gov/" target="_blank">2001 Tree Canopy data sets for the US</a></h6>
+        <p>Multi-Resolution Land Cover Data, created by a consortium of US government agencies. This site has the first nation-wide canopy cover data set for the US. No information on species, but it's possible to use it in conjunction with the land cover data from the same site to estimate evergreen versus deciduous. The MRLC is a consortium of US federal agencies (EPA, USGS, US Forest Service, etc.). See Production Status link for a map of what stage each region is in.&nbsp; Read the metadata to understand the attribute information. The data is a raster data set with 30 meter pixels.</p>
+        <h6 style="font-weight:bold;"><b>ForestMappingandAnalysis</b></h6>
+        <h6 style="font-weight:bold;"><a href="http://www.nrs.fs.fed.us/atlas/" target="_blank">Climate Change Atlas for 80 Tree Species in the Eastern United States</a> - US Forest Service</h6>
+        <p>Maps out changes in bird and tree species due to climate change.</p>
+        <h6 style="font-weight:bold;"><a href="http://fia.fs.fed.us/" target="_blank">Forest Inventory and Analysis</a> - US Forest Service</h6>
+        <p>Home to the US Forest Census, links to data, tools, publications, etc. Note that the exact locations of the forest inventory cannot be provided to protect the privacy of private landowners from whom the data was collected. Nonetheless, the Forest Service works with researchers to facilitate research without compromising privacy rights.</p>
+        <h6 style="font-weight:bold;"><b>US State and Local Tree Inventories</b></h6>
+        <p>If you're interested in local or state specific forest information, be sure to check out state forest agencies. Washington and Oregon both have fairly extensive GIS data sites.</p>
+        <h6 style="font-weight:bold;"><a href="http://phillytreemap.org/" target="_blank">Philadelphia Tree Map</a></h6>
+        <p>Another effort for community tree mapping. Data can be downloaded in .csv or .kml file</p>
+        <h6 style="font-weight:bold;"><a href="http://www.urbanforestmap.org/" target="_blank">San Francisco Urban Forest Map</a></h6>
+        <p>This is a non-profit that allows users to map trees in San Francisco - data can be exported in a shape file or .csv or .kml file.</p>
+        <h6 style="font-weight:bold;"><b>Global forestry data</b></h6>
+        <h6 style="font-weight:bold;"><a href="http://www.globalforestwatch.org/english/index.htm" target="_blank">Global Forest Watch</a></h6>
+        <p>A variety of forest-related data sets from various regions around the globe. Global Forest Watch is an initiative of the <a class="external-link" href="http://www.wri.org/" rel="nofollow">World Resources Institute</a>, which has a number of other environmental-related data sets online (go to <em>Publications</em> link, then <em>Data Sets</em>).</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Geology" tag="h7" swaptitle="▾ Geology" rel=”this-highlander]
+        <h6 style="font-weight:bold;">State / Province</h6>
+        <h6 style="font-weight:bold;"><a href="http://agic.az.gov/portal/dataList.do?sort=theme&amp;dataset=0" target="_blank">Arizona GeoData Portal</a></h6>
+        <p>The data and services available on the Arizona Geodata Portal are contributed by a variety of public agencies in Arizona, some of which produce earth science data.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.geostor.arkansas.gov/" target="_blank">Arkansas Geostor</a></h6>
+        <p>This official site provides access to GIS applications, data, and web services in the state of Arkansas.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.conservation.ca.gov/cgs/" rel="nofollow">California Geological Survey</a></h6>
+        <p>Geologic information related to California can be found here.</p>
+        <h6 style="font-weight:bold;"><a href="http://cogcc.state.co.us/" target="_blank">Colorado Oil and Gas Conservation Commission</a></h6>
+        <p>Colorado oil and gas data can be found here through the Conservation Commission.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.crgsc.org/Data/" rel="nofollow">Columbia Regional Geospatial Service Center</a></h6>
+        <p>Texas geographic data provided by the Columbia Regional Geospatial Service Center are the result of a collaborative effort by local, regional, state and national government agencies as well as educational and research institutions. These data are available for free download from this site. A section dedicated to Louisiana is also included.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ct.gov/dep/cwp/view.asp?a=2698&amp;q=322898&amp;depNav_GID=1707" target="_blank">Connecticut Department of Energy & Environmental Protection GIS Data</a></h6>
+        <p>GIS Data from the Connecticut Department of Energy &amp; Environmental Protection are downloadable in Shapefile and File Geodatabase format. FGDC metadata and cartographic symbology defined in .lyr files are included with each download. They include environmental, geology, soil, hydrography, and conservation themed data.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.dgs.udel.edu/data" target="_blank">Delaware Geological Survey Digital Datasets</a></h6>
+        <p>Digital data released by the Delaware Geological Survey represent the results of original professional research and as such are used by professionals and the public. This research includes groundwater, lithology, and seismic GIS data.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.epa.gov/esd/land-sci/nv_geospatial/pages/nvgeo_gisdata.htm" target="_blank">EPA Landscape Ecology: Nevada Geospatial GIS Data</a></h6>
+        <p>This website contains 37 downloadable geospatial datasets of Nevada with complete metadata. These include mine shafts, caves, soils, and water bodies.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.fgdl.org/" target="_blank">Florida Geographic Data Library</a></h6>
+        <p>The Florida Geographic Data Library (FGDL) is a mechanism for distributing spatial data throughout the state of Florida. Currently, there are over 350 current and historic GIS layers in the FGDL, from over 35 local, state, federal, and private agencies. FGDL includes data on Land Use/ Land Cover, Hydrography, Soils, Transportation, Boundaries, Environmental Quality, Conservation, Census, and more. FGDL contains primarily vector GIS data layers.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.dep.state.fl.us/geology/gisdatamaps/" target="_blank">Florida Geological Survey - Data and Maps</a></h6>
+        <p>The Florida Geological Survey page includes lithology, petroleum, and subsidence GIS data.</p>
+        <h6 style="font-weight:bold;"><a href="http://pubs.usgs.gov/of/2007/1089/" target="_blank">Geologic Map of the State of Hawaii</a></h6>
+        <p>U.S. Geological Survey Open-File Report 2007-1089 includes GIS data for geologic units, faults, dikes, and ash in Hawaii.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.gsa.state.al.us/gsa/gis_data.aspx" rel="nofollow">Geological Survey of Alabama GIS Data</a></h6>
+        <p>This site includes Alabama GIS data related to groundwater, sinkholes, hydrocarbon, and coastal processes.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.kansasgis.org/catalog/" target="_blank">Kansas Data Access & Support Center Data Catalog</a></h6>
+        <p>The DASC Data Catalog is your resource for finding and downloading Kansas GIS data. These data are provided as a service of the State of Kansas, the Kansas GIS Policy Board as well as other local, state and federal agencies.&nbsp; This includes aquifer, surficial geology, and environmental data. (Free Login Required)</p>
+        <h6 style="font-weight:bold;"><a href="http://www.uky.edu/KGS/gis/" target="_blank">Kentucky Geological Survey Maps and GIS</a></h6>
+        <p>The Kentucky Geological Survey and other state and federal agencies have electronic maps and GIS data that you can download for your use. This includes geologic coverages of state, oil and gas wells, coal exploration sites, watersheds, water wells, and karst dye traces.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.mngeo.state.mn.us/chouse/geology/" target="_blank">Minnesota Geospatial Information Office Geology Data</a></h6>
+        <p>This first-stop information website provides an overview of major geologic GIS datasets, maps, and educational information, including geologic mapping standards, available for Minnesota.</p>
+        <h6 style="font-weight:bold;"><a href="http://nris.mt.gov/gis/" target="_blank">Montana Geographic Information Clearinghouse</a></h6>
+        <p>The Montana Natural Resource Information System includes mining, water, and geology data.</p>
+        <h6 style="font-weight:bold;"><a href="http://geoinfo.nmt.edu/publications/maps/gis/" target="_blank">New Mexico Bureau of Geology &amp; Mineral Resources Cartography and GIS</a></h6>
+        <p>Good links for geology GIS data for New Mexico.</p>
+        <h6 style="font-weight:bold;"><a href="http://gis.ny.gov/gisdata/inventories/results.cfm?themeIDs=22" target="_blank">New York State GIS Clearinghouse Geology/Soils Data</a></h6>
+        <p>A subset of the NYSGIS Clearinghouse.&nbsp; This page displays all data sets tagged with soils/geology.</p>
+        <h6 style="font-weight:bold;"><a href="http://gis.ny.gov/gisdata/inventories/member.cfm?organizationID=975" target="_blank">New York State GIS Clearinghouse USGS New York Water Science Center Data</a></h6>
+        <p>A subset of the NYSGIS Clearinghouse.&nbsp; This page displays all data sets owned by the US Geological Survey (USGS) New York Water Science Center.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.nysm.nysed.gov/gis/" target="_blank">New York State Museum GIS</a></h6>
+        <p>A series of GIS files provided by NYS Museum.&nbsp; This data includes surficial, bedrock, and fault information.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.granit.unh.edu/data/downloadfreedata/category/databycategory.html" target="_blank">NH Geographically Referenced Analysis and Information Transfer System (NH GRANIT)</a></h6>
+        <p>New Hampshire's Statewide GIS Clearinghouse includes groundwater, glacial, bedrock, and inland water resources data.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.state.nj.us/dep/njgs/geodata/index.htm" target="_blank">NJ Department of Environmental Protection Geological and Water Survey Digital Geodata Series</a></h6>
+        <p>This site offers many reports with New Jersey GIS data including reports with geology, groundwater, and geophysics topics.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.nconemap.com/DiscoverGetData/FTPDataDownload.aspx" target="_blank">North Carolina OneMap Geospatial Portal</a></h6>
+        <p>North Carolina OneMap includes landslide, fault, dikes, and lithology data.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.nd.gov/gis/" target="_blank">North Dakota GIS</a></h6>
+        <p>This web site is the portal to North Dakota geospatial data and information. The data, interactive maps, and other information available here are the result of a collaborative effort by North Dakota state agencies, local and federal government, and the private sector.</p>
+        <h6 style="font-weight:bold;"><a name="Geology-OfficeoftheMassachusettsStateGeologist"></a><a class="external-link" href="http://www.geo.umass.edu/stategeologist/frame_maps.htm" rel="nofollow">Office of the Massachusetts State Geologist</a></h6>
+        <p>If you're looking for a particular type of Massachusetts geologic data, such as subsurface information, water data, fracture-characterization maps, etc. they can be found here. Some good Massachusetts links are also here.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ogs.ou.edu/" target="_blank">Oklahoma Geological Survey</a></h6>
+        <p>The Oklahoma Geological Survey site includes petroleum, water, and geology data.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.dcnr.state.pa.us/topogeo/index.aspx" target="_blank">Pennsylvania Bureau of Topographic and Geologic Survey</a></h6>
+        <p>The Bureau has developed several Pennsylvania data sets, both by using in-house resources and by engaging in cooperative projects with other government agencies, universities, and organizations.&nbsp; They include bedrock, structural, and petroleum research GIS data.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.pasda.psu.edu/" target="_blank">Pennsylvania Geospatial Data Clearinghouse</a></h6>
+        <p>Pennsylvania Spatial Data Access (PASDA) is the official public access geospatial clearinghouse for the Commonwealth of Pennsylvania.&nbsp; This site has good soil, glacial, coal, oil/gas shale, and watershed data among other geologic themes.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.edc.uri.edu/rigis/data/data.aspx?ISO=geoscientificInformation" target="_blank">RIGIS Geospatial Data Catalog</a></h6>
+        <p>The mission of the RIGIS is to monitor, coordinate, and provide leadership for activities related to the use of GIS technology within Rhode Island, to support initiatives to implement or use the technology, and to manage and provide access to a common database of geographically referenced information including bedrock, glacial, and surficial geology.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.dnr.sc.gov/GIS/gisdnrdata.html" target="_blank">South Carolina Department of Natural Resources</a></h6>
+        <p>Many different natural resource and geology themed GIS data sets are available from South Carolina DNR.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.dnr.sc.gov/geology/DigitalMapping.htm" target="_blank">South Carolina Geological Survey Digital Geologic Data</a></h6>
+        <p>These datasets were developed by the South Carolina Geological Survey and are provided for general use.&nbsp; They are basic geologic GIS layers both in statewide and 24k Quads.</p>
+        <h6 style="font-weight:bold;"><a href="http://hawaii.gov/dbedt/gis/" target="_blank">State of Hawaii Office of Planning GIS Program</a></h6>
+        <p>This site has GIS files for Hawaii which include coastal, hazard, and natural resource themed data.</p>
+        <h6 style="font-weight:bold;"><a href="http://data.tnris.org/datadownload/download.jsp" rel="nofollow">TNRIS Data Catalog</a></h6>
+        <p>The Texas Natural Resources Information System includes bathymetry, geology, hydro, and landcover GIS data.</p>
+        <h6 style="font-weight:bold;"><a href="http://magic.lib.uconn.edu/connecticut_data.html#geoscience" target="_blank">University of Connecticut Map and Geographic Information Center Connecticut GIS Data</a></h6>
+        <p>This site has GIS files for Connecticut which include bedrock geology, solid waste sites, open space, soils, and surficial materials.</p>
+        <h6 style="font-weight:bold;"><a href="http://wagda.lib.washington.edu/data/geography/wa_state/wageol/" target="_blank">University of Washington Digital Geologic Data</a></h6>
+        <p>Quadrangle GIS data for Washington including geologic units, faults, fold axes, volcanic vents, dikes, and glacial features.</p>
+        <h6 style="font-weight:bold;"><a href="http://gis.ess.washington.edu/data/" target="_blank">University of Washington Geomorphological Research Group</a></h6>
+        <p>University of Washington Department of Earth and Space Sciences Quaternary Research Center hosts some GIS files related mostly to Washington, specifically King County and Puget Sound.</p>
+        <h6 style="font-weight:bold;"><a href="http://geology.utah.gov/maps/gis/" target="_blank">Utah Geological Survey GIS Map Data</a></h6>
+        <p>Utah GIS geologic map data files are produced from published or open-filed geologic maps, and include geologic units, contacts, hazards, and other map information.</p>
+        <h6 style="font-weight:bold;"><a href="http://gis.utah.gov/sgid-vector-download/utah-sgid-vector-gis-data-layers-by-category#GEOSCIENCE" target="_blank">Utah's State Geographic Information Database</a></h6>
+        <p>Utah's State Geographic Information Database contains hundereds of GIS data layers. This includes aquifer, fault, contact, landslide, mineral, petroleum, and soil data and many more.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.anr.state.vt.us/dec/maps.htm" target="_blank">Vermont Department of Environmental Conservation</a></h6>
+        <p>GIS data from the Vermont Geological Survey and Agency of Natural Resources.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.deq.virginia.gov/mapper_ext/" target="_blank">Virginia Environmental GIS</a></h6>
+        <p>The Virginia Department of Environmental Quality provides shapefiles with water, petroleum, and pollution data.</p>
+        <h6 style="font-weight:bold;"><b>Country / Continent</b></h6>
+        <h6 style="font-weight:bold;"><a href="http://www.eea.europa.eu/data-and-maps/data" target="_blank">European Environmental Agency</a></h6>
+        <p>Downloadable data about Europe's environment.&nbsp; Many raster and vector files are available covering different portions of Europe.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ags.gov.ab.ca/GIS/download_gis.htm" target="_blank">Alberta Geological Survey</a></h6>
+        <p>Many good shapefiles representing surface and subsurface features in Alberta (including kimberlites, bedrock, sand and gravel deposits etc.) are provided by the Alberta Geological Survey.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.geology.gov.yk.ca/databases_gis.html" target="_blank">Yukon Geological Survey</a></h6>
+        <p>GIS data found here in includes mineral, geochemical, glacial, and structural themed data for the Yukon.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.empr.gov.bc.ca/MINING/GEOSCIENCE/MAPPLACE/GEODATA/Pages/default.aspx" target="_blank">British Columbia Ministry of Energy, Mines and Petroleum Resources</a></h6>
+        <p>Geospatial data downloads for British Columbia include mineral and water themed information.</p>
+        <h6 style="font-weight:bold;"><a href="http://geobank.sa.cprm.gov.br/" target="_blank">Geological Survey of Brazil - GEOBANK</a></h6>
+        <p>Lithology and hydrology resources from the Brazil Geological Survey.&nbsp; (FREE LOGIN, SOME PORTUGUESE)</p>
+        <h6 style="font-weight:bold;"><a href="http://mapserver.inegi.org.mx/data/inf_e1m/?s=geo&amp;c=979" target="_blank">Mexico National Institute of Statistics and Geography</a></h6>
+        <p>Earth science related vector data available for Mexico as part of a topographic and natural resources series.&nbsp; (IN SPANISH)</p>
+        <h6 style="font-weight:bold;"><a href="http://www.igme.es/internet/cartografia/portada/sig.htm" target="_blank">Geology and Minerals Institute of Spain (El Instituto Geológico y Minero de España)</a></h6>
+        <p>Multiple scale geoscientific information available for Spain.&nbsp; Geomorphology, hydrogeology, lithostratigraphy are among the GIS data files downloadable.&nbsp; A search feature is implemented for querying the catalog.&nbsp; (IN SPANISH)</p>
+        <h6 style="font-weight:bold;"><a href="http://geocatmin.ingemmet.gob.pe/" target="_blank">GeoCatmin</a></h6>
+        <p>INGEMMET, Peru's Mineral and Cadastral System, uses a portal for viewing and querying geospatial information, GeoCatmin.&nbsp; Some geology GIS data is available for download in shapefile form.&nbsp; Others are only downloadable as KML.&nbsp; (SOME SPANISH)</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ga.gov.au/products-services/data-applications.html" target="_blank">Geoscience Australia</a></h6>
+        <p>The Australian government provides access to GIS data with many geoscience themes available.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.bgs.ac.uk/products/digitalmaps/" target="_blank">British Geological Survey</a></h6>
+        <p>Digital geological map data are available both onshore and offshore at a range of resolutions from small to large scale.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.gsi.ie/mapping.htm" target="_blank">Geological Survey of Ireland</a></h6>
+        <p>The Geological Survey of Ireland (GSI) is the National Earth Science Agency. It is responsible for providing geological advice and information, and for the acquisition of data for this purpose. GSI produces a range of products including maps, reports and databases and acts as a knowledge centre and project partner in all aspects of Irish geology.</p>
+        <h6 style="font-weight:bold;"><a href="http://gns.cri.nz/static/datadict/" target="_blank">QMAP GIS data</a></h6>
+        <p>A wide variety of GIS data is available for download for New Zealand.</p>
+        <h6 style="font-weight:bold;"><a href="http://afghanistan.cr.usgs.gov/" target="_blank">USGS Projects in Afghanistan</a></h6>
+        <p>A variety of downloadable geospatial reference datasets relating to Afghanistan. They range from Landsat images to topographic products and the results of airborne surveys. Some are commercially available products. Some were compiled from existing data, both historical and current. Others were assembled and/or created specifically to support USGS Projects in Afghanistan acitivities. All are accessible here at no cost.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.geology.cz/extranet-eng/geodata/" target="_blank">Czech Geological Survey</a></h6>
+        <p>In the frame of activities of the state geological survey, the Czech Geological Survey collects, acquires, stores, and assesses data about the geological composition of the state territory and provides it to the state authorities of different level. The CGS conveys regional geological data and information also to the professional and lay public. Beside free of charge information services of free accessible data on the CGS Information Portal or the CGS Map Server vector data from geodatabases, raster data from digital archive, excerpts of analytical and non-analytical data can be ordered.</p>
+        <h6 style="font-weight:bold;"><b>Repositories</b></h6>
+        <h6 style="font-weight:bold;"><a href="http://idn.ceos.org/Data/portals/ceos/" target="_blank">CEOS International Directory Network Portals</a></h6>
+        <p>Many earth science data files are linked into this searchable portal.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.earthscope.org/" target="_blank">EarthScope</a></h6>
+        <p>EarthScope is freely-accessible data and data products from thousands of geophysical instruments that measure motions of the Earth's surface, record seismic waves, and recover rock samples from depths at which earthquakes originate.</p>
+        <h6 style="font-weight:bold;"><a href="http://gisinventory.net/" target="_blank">National States Geographic Information Council GIS Inventory</a></h6>
+        <p>The GIS Inventory is produced by the National States Geographic Information Council as a tool for states and their partners. Its primary purpose is to track data availability and the status of GIS implementation in state and local governments to aid the planning and building of Spatial Data Infrastructures. The Random access metadata for online nationwide assessments (Ramona) database is a critical component of the GIS Inventory.&nbsp; Use this tool if you are having trouble finding data for a specific area of interest.</p>
+        <h6 style="font-weight:bold;"><a href="http://agdc.usgs.gov/data/" target="_blank">USGS Alaska Geospatial Data Clearinghouse</a></h6>
+        <p>The USGS Alaska Science Center Geographic Science operates and maintains the AGDC National Spatial Data Infrastructure (NSDI) Clearinghouse to coordinate geospatial data activities and to promote data sharing among the Federal, state, Native, local, commercial, and non-governmental (NGO) member agencies.</p>
+        <h6 style="font-weight:bold;"><a href="http://coastalmap.marine.usgs.gov/regional/contusa/" target="_blank">USGS Coastal and Marine Geology Program</a></h6>
+        <p>A list of publications containing GIS data that are being served by the USGS Coastal and Marine Geology Program.</p>
+        <h6 style="font-weight:bold;"><a href="http://mrdata.usgs.gov/" target="_blank">USGS Mineral Resources On-Line Spatial Data</a></h6>
+        <p>Interactive maps and downloadable data for regional and global Geology, Geochemistry, Geophysics, and Mineral Resources.</p>
+        <h6 style="font-weight:bold;"><a href="http://volcanoes.usgs.gov/activity/data/" target="_blank">USGS Volcano Hazards Program</a></h6>
+        <p>A source for USGS volcano monitoring data.</p>
+        <h6 style="font-weight:bold;"><a href="http://water.usgs.gov/maps.html" target="_blank">USGS Water Resources of the United States</a></h6>
+        <p>Many spatial data files are available here related to watershed, groundwater, surface water, and water quality.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Global Data Sets" tag="h7" swaptitle="▾ Global Data Sets" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://www.ciat.cgiar.org/" target="_blank">CIAT - International Center for Tropical Agriculture</a></h6>
+        <p>This organization uses GIS in many projects, and has several tools availalbe. Not sure if you can download actual data, but a good source to find out about GIS and natural resources research, especially in Asia and Africa.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ciesin.org/" target="_blank">CIESIN Center for International Earth Science Information Network</a></h6>
+        <p>From the web site: "The Center for International Earth Science Information Network (CIESIN) is a center within the Earth Institute at Columbia University. CIESIN works at the intersection of the social, natural, and information sciences, and specializes in on-line data and information management, spatial data integration and training, and interdisciplinary research related to human interactions in the environment." Be sure to look at the links to their project and programs (left side of site) - including the World Data Center (<a href="http://www.gateway.ciesin.org/wdc/" target="_blank">http://www.gateway.ciesin.org/wdc/</a>) and the Socio-Economic Data and Applications Center (<a href="http://sedac.ciesin.columbia.edu/" target="_blank">http://sedac.ciesin.columbia.edu/</a>). CIESIN has new world population data sets that are of particular use.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.cgiar-csi.org/" target="_blank">CIGIAR</a> (Consortium for Spatial Information)</h6>
+        <p>From the web site: "The<b>Consortium for Spatial Information (CGIAR-CSI)</b> is an initiative of the many geospatial scientists within the Consultative Group for International Agriculture Research (CGIAR), linking the efforts of CGIAR scientists, national and international partners, and others working to apply and advance Geospatial Science for International Sustainable Agriculture Development, Natural Resource Management, Biodiversity Conservation, and Poverty Alleviation in Developing Countries. See the links for various geospatial information. NOTE: CIGIAR has a very easy interface for downloading finished SRTM 90 meter digtial elevation models - see <a href="http://srtm.csi.cgiar.org/" target="_blank">http://srtm.csi.cgiar.org/</a></p>
+        <h6 style="font-weight:bold;"><a href="https://earthdata.nasa.gov/" target="_blank">EarthData</a> (NASA Earth Observatory System Data and Information System)</h6>
+        <p>Gateway to NASA's global satellite data and derivatives.</p>
+        <p><a href="http://bioval.jrc.ec.europa.eu/" target="_blank">Data and Products</a> - includes the <a href="http://bioval.jrc.ec.europa.eu/products/glc2000/glc2000.php" target="_blank">Global Land Cover 2000 Data</a> set and a host of others</p>
+        <h6 style="font-weight:bold;"><a href="http://www.glcf.umd.edu/data/mosaic/" target="_blank">Geocover Landsat Mosaics</a></h6>
+        <p>You can download orthorectified Landsat mosaics for the whole world from an easy to use interface. Images are from 1990 or 2000. Take a look at GeoCover Tutorial for useful background information on satellite imagery. Note: the images are georeferenced but seem to lack coordinate system definitions. You must define the coordinate system before use. The coordinate system is UTM WGS 84, and the zone number is in the name - for example, the name "N-13-25_2000_loc", means UTM Zone 13 N. Images from the southern hemisphere should take the UTM north zone not the south. for example "S-21-10_2000_loc" should have its coordinate system defined as UTM Zone 21 N, not Zone 21 S.</p>
+        <h6 style="font-weight:bold;"><a href="http://grdc.bafg.de/" target="_blank">Global Runoff Data Center</a></h6>
+        <p>Digital world-wide repository of river discharge data, including mean, minimum, maximum monthly discharges and time series of most major rivers of the world, plus GIS data for basins and river networks. Data requesters must identify themselves first, agree to usage requirements, and wait for approval.</p>
+        <h6 style="font-weight:bold;"><a href="http://eros.usgs.gov/#/Find_Data/Products_and_Data_Available/HYDRO1K" target="_blank">Hydro 1K</a></h6>
+        <p>Hydrographic data derived from the GTOPO 1 kilometer digital elevation models. These are 1 km DEM-derived hydrographic data (elevation, slope, streams, aspect) - not highly accurate but better than nothing and available for the entire world in shape/grid format (downloads as .tar file)</p>
+        <h6 style="font-weight:bold;"><a href="http://waterdata.iwmi.org/" target="_blank">International Water Management Institute - Remote Sensing/GIS Center</a></h6>
+        <p>Lots of good GIS data, including boundary data and water-related data (more detailed for individual project watersheds). Very slow connection (coming from Sri Lanka). You need to register and this takes a few hours to validate. The site organization assumes you know what you're doing - not a lot of help or metadata. Also check out their RS/GIS Links page.</p>
+        <h6 style="font-weight:bold;">You can download VMAP1 and VMAP2 data for some parts of the world from here. Not the easiest user interface, but it does work! Read the HELP section first. <em>Mapability.com</em> (<a href="http://www.mapability.com/info/index.html" rel="nofollow">http://www.mapability.com/info/index.html</a>) has more information and more help for these data sets. Tufts GIS Center has the data on CD as well.</h6>
+        <h6 style="font-weight:bold;"><a href="http://hydrosheds.cr.usgs.gov/" rel="nofollow">USGS - Hydrosheds</a></h6>
+        <p>Digital elevation models and hydrologic base data derived from the Shuttle Radar Topography Mission and other sources at 90 meter grid cell resolution - more detailed than the Hydro 1K data, but not available for the whole world yet (as of 8/07, there is data for South America and most of eastern Asia). See the web site for details on how the SRTM and other data sources were processed, and for status of other areas and expected completion dates.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.wri.org/" target="_blank">World Resources Institute</a></h6>
+        <p>The World Resources Institute makes public many of the data sets used in their reports, including GIS data. You can see a list of available data sets by going to the <em>Publications</em> link, then <em>Datasets</em>, or go to the individual projects / Earth Trends categories and click on data links if available.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ciesin.org/" target="_blank">CIESIN</a> (Center for International Earth Science Information Network, Columbia University)</h6>
+        <p>A wealth of information, data sets, and projects, including a <em>Gridded Population of the World</em> data set (<a href="http://sedac.ciesin.columbia.edu/gpw/" target="_blank">http://sedac.ciesin.columbia.edu/gpw/</a>). Here is a link to CIESIN's Population Grid Viewer Application:<a href="http://sedac.ciesin.columbia.edu/mapping/popgrid/" target="_blank">http://sedac.ciesin.columbia.edu/mapping/popgrid/</a></p>
+        <h6 style="font-weight:bold;"><a href="http://www.measuredhs.com/start.cfm" target="_blank">Demographic and Health Surveys (DHS)</a></h6>
+        <p>DHS analyzes and distributes survey results regarding health, nutrition, HIV for over 75 countries. This site does not have GIS data per se, but does have detailed health surveys, some of which can be used in spatial analysis.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ciesin.columbia.edu/povmap/" target="_blank">Global Poverty Mapping Project</a> (CIESIN, Columbia University)</h6>
+        <p>Downloadable sub-national poverty data sets. These are available for selected proxy measures of poverty, at global and national scales.</p>
+        <h6 style="font-weight:bold;"><a href="http://international.ipums.org/international/" target="_blank">IPUMS International</a> (Minnesota Population Center, University of Minnesota)</h6>
+        <p>From the web site: "IPUMS-International is a project dedicated to collecting and&nbsp;distributing census data from around the world." Not GIS data, but has tabular census data.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ornl.gov/sci/landscan/" target="_blank">Landscan</a> (Oak Ridge National Laboratory, US)</h6>
+        <p>Gridded population data on 30"x30" cell size, available for university research and Federal agencies for free download after registration.</p>
+        <h6 style="font-weight:bold;"><a href="http://sedac.ciesin.columbia.edu/" target="_blank">SEDAC</a> (Socio Economic Data and Appliation Center)</h6>
+        <p>A program within CIESIN that specializes in socio-economic data.</p>
+        <h6 style="font-weight:bold;"><a href="http://web.worldbank.org/WBSITE/EXTERNAL/TOPICS/EXTPOVERTY/0,,menuPK:336998%7EpagePK:149018%7EpiPK:149093%7EtheSitePK:336992,00.html" target="_blank">World Bank - Poverty Issue web site</a></h6>
+        <p>See link for poverty mapping</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Health" tag="h7" swaptitle="▾ Health" rel=”this-highlander]
+        <h6 style="font-weight:bold;">Center for Disease Control (US)</h6>
+        <p><a href="http://wonder.cdc.gov/" target="_blank">CDC Wonder</a> - Single point access to a wide variety of reports and public health data</p>
+        <h6 style="font-weight:bold;"><a href="http://www.dartmouthatlas.org/" target="_blank">Dartmouth Atlas of Health Care</a></h6>
+        <p>Project that tracks distribution of medical resources in the US - includes reports and data (mostly tabular), but can be linked to Hospital Service Areas and Hospital Referral Regions.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.measuredhs.com/start.cfm" target="_blank">Demographic and Health Surveys (DHS)</a></h6>
+        <p>DHS analyzes and distributes survey results regarding health, nutrition, HIV for over 75 countries. See the <a href="http://www.measuredhs.com/aboutsurveys/gis/start.cfm" target="_blank">DHS GIS Overview page</a> for online mapping and GIS-friendly data download/requests.</p>
+        <h6 style="font-weight:bold;"><a href="http://datawarehouse.hrsa.gov/" target="_blank">Health Resources and Services Administration</a></h6>
+        <p>US Department of Health and Human Services - HRSA Geospatial Data Clearinghouse. From the web site:</p>
+        <ul><li>HRSA awarded grant data, including grantee names, contacts, awarded amounts by fiscal year</li>
+            <li>HRSA supported health care service delivery sites, including Health Centers, Ryan White CARE Act Ambulatory/Outpatient Medical care sites, National Health Service Corps clinician sites, and Nursing Education Loan Repayment sites</li>
+            <li>Health Professional Shortage Areas</li>
+            <li>Medically Underserved Areas and Populations</li>
+            <li>Hospitals, skilled nursing facilities and other Medicare-approved providers</li>
+            <li>2000 U.S. population data from the U.S. Census and 2004 population data from Claritas</li>
+            <li>Births and infant deaths</li>
+            <li>Geographic data including census tracts, congressional districts, counties, States, roads, bodies of water</li></ul>
+        <p>The HRSA has an ArcIMS Server: ims.hrsa.gov, Service Name: HGDW_Mapping. You can download the GIS data for the above data sets by following the directions on the Online Mapping Services page (<a href="http://datawarehouse.hrsa.gov/data/dataServices/arcCatalogConnection.aspx" target="_blank">http://datawarehouse.hrsa.gov/data/dataServices/arcCatalogConnection.aspx</a>) - click on the instructions listed for ArcCatalog on this page. After going through these instructions, you should be viewing the HRSA data in ArcMap. At that point you can right-click on any of the data layers and export the data layer to a shape file on your local computer.</p>
+        <h6 style="font-weight:bold;">Boston Public Health Commission</h6>
+        <h6 style="font-weight:bold;"><a href="http://masschip.state.ma.us/" target="_blank">MassChip</a> (Massachusetts Community Information Profile, Department of Public Health)</h6>
+        <p>Access and query tabular data for Massachusetts at various geographic levels, including town, county, school district, and for the Boston area, urban neighborhoods. No GIS data, but the tabular data can be linked to existing GIS administrative boundary data sets.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.who.int/gho/map_gallery/en/" target="_blank">World Health Organization (WHO) Global Health Observatory Map Gallery</a></h6>
+        <p>Includes an extensive list of maps on major health topics. Maps are classified by themes as below, and can be further searched by keyword.&nbsp; Also see the WHO GeoNetwork (<a href="http://www.who.int/geonetwork/srv/en/main.search" target="_blank">http://www.who.int/geonetwork/srv/en/main.search</a>) for downloadable data set.</p>
+        <h6 style="font-weight:bold;"><a href="http://www-sul.stanford.edu/depts/gis/medical.html" target="_blank">Web Sites for GIS Health Data</a></h6>
+        <p>Online GIS Health Database by Stanford University Libraries and Information Services.</p>
+        <h6 style="font-weight:bold;"><a href="http://data.un.org/" target="_blank">UNdata</a></h6>
+        <p>United Nations data repository has health data from most countries of the world.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Historic Maps and Data" tag="h7" swaptitle="▾ Historic Maps and Data" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><b>General Data</b></h6>
+        <h6 style="font-weight:bold;"><a href="http://www.nhgis.org/" target="_blank">National Historic GIS (NHGIS)</a></h6>
+        <p>Good site for finding GIS-formatted historical US census data. Before downloading data, take a look at the online Social Explorer mapping site to understand what the NHGIS site has.</p>
+        <h6 style="font-weight:bold;"><b>New England Historic Map Sites</b></h6>
+        <h6 style="font-weight:bold;"><a href="http://docs.unh.edu/nhtopos/nhtopos.htm" target="_blank">Historic USGS Maps of New England and New York</a> (University of New Hampshire)</h6>
+        <p>Digital copies of older USGS topographic maps, download them and georeference them in ArcGIS or Google Earth.</p>
+        <h6 style="font-weight:bold;"><a href="http://docs.unh.edu/digital.htm" target="_blank">University of New Hampshire Library - Digital Collections</a></h6>
+        <p>Includes digital versions of topo maps (above) plus 1878 geological atlas of New Hampshire and 1892 atlas of New Hampsire cities and towns</p>   
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Housing" tag="h7" swaptitle="▾ Housing" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://www.ffiec.gov/cra/default.htm" target="_blank">Community Reinvestment Act</a></h6>
+        <p>"The Community Reinvestment Act is intended to encourage depository institutions to help meet the credit needs of the communities in which they operate, including low- and moderate-income neighborhoods, consistent with safe and sound banking operations."</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ffiec.gov/hmda/" target="_blank">Home Mortgage Disclosure Act (HMDA)</a></h6>
+        <p>The Home Mortgage Disclosure Act (HMDA) was enacted by Congress in 1975 and is implemented by the Federal Reserve Board's Regulation C. This regulation provides the public loan data that can be used to assist: 1) in determining whether financial institutions are serving the housing needs of their communities; 2) public officials in distributing public-sector investments so as to attract private investment to areas where it is needed; 3) and in identifying possible discriminatory lending patterns.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.huduser.org/" target="_blank">HUD-User (US Department of Housing and Urban Development)</a></h6>
+        <p>You can download data like sites getting Low Income Housing Tax Credits, with latitude and longitude, for bringing up in GIS, as well as housing affordability and income data used in HUD program funding. Lots of other data as well. We;ve written a Tip Sheet for using some of the HUD data sets - see <a href="http://wikis.uit.tufts.edu/confluence/display/GIS/GIS+Tip+Sheets+%28ArcGIS+9.x%29" target="_blank">ArcGIS 9.x Tip Sheets</a> under <em>Working with Special Data - HUD User</em>.</p>
+        <h6 style="font-weight:bold;"><a href="http://tufts.policymap.com/maps" target="_blank">PolicyMap</a></h6>
+        <p>A non-profit online mapping service that offers an easy way to view and obtain data for demographics, home sale statistics, health data, mortgage trends, school performance scores, labor data like unemployment, and crime statistics</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Land Characteristics (land cover, impervious cover, vegetation)" tag="h7" swaptitle="▾ Land Characteristics (land cover, impervious cover, vegetation)" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://forobs.jrc.ec.europa.eu/products/glc2000/products.php" target="_blank">Global Environment Monitoring Unit</a></h6>
+        <p>Raster data for global land cover for the year 2000.</p>
+        <h6 style="font-weight:bold;"><a href="http://glcf.umd.edu/data/lc/">Global Land Cover Facility</a></h6>
+        <p>From the GCLF web site: "The GLCF is a center for land cover science with a focus on research using remotely sensed satellite data and products to assess land cover change for local to global systems." - find data and publications here. The use of data on this site assume good knowledge of ecological and biogeochemical modeliing and database design.</p>
+        <h6 style="font-weight:bold;"><a href="https://earthdata.nasa.gov/" target="_blank">EarthData</a> (NASA Earth Observatory System Data and Information System)</h6>
+        <p>Gateway to NASA's global satellite data and derivatives.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.mrlc.gov/" target="_blank">Multi-Resolution Land Cover Data</a> (US government agencies)</h6>
+        <p>Good site for downloadng the most recent land cover (<b>National Land Cover Data 2006</b> - NLCD), impervious cover, and canopy cover data sets for the entire US produced by the MRLC Consortium of US federal agencies (EPA, USGS, US Forest Service, etc.). The 1992 landcover data set is complete for the entire US. The 2001 landcover, impervious cover, and canopy cover appears to be complete as of February 2007. Read the metadata to understand the attribute information. The data is a raster data set with 30 meter pixels. List of land cover classifications at: <a href="http://www.mrlc.gov/nlcd06_leg.php" target="_blank">http://www.mrlc.gov/nlcd06_leg.php</a> (NOTE FOR TUFTS USERS - the 2001 Area 13 land cover, impervious cover, and tree cover data sets can be found on the M: drive in the GIS Center - no need to download them - look in M:\country\US\NLCD). You can download smaller areas that you define from <a href="http://nationalmap.gov/" target="_blank">The National Map service</a>.</p>
+        <h6 style="font-weight:bold;"><a href="http://landcover.usgs.gov/" target="_blank">USGS Land Cover Institute</a></h6>
+        <p>Good background information on land cover mapping and analysis, publications, research projects, and data sets. Great links to other sites that are doing research and sharing data.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Middle East" tag="h7" swaptitle="▾ Middle East" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://timea.rice.edu/index.html" target="_blank">Travellers in the Middle East Archive (TIMEA)</a>- Rice Universty</h6>
+        <p>From the web site: "The Travelers in the Middle East Archive (TIMEA) is a digital archive that focuses on Western interactions with the Middle East, particularly travels to Egypt during the nineteenth and early twentieth centuries. TIMEA offers electronic texts such as travel guides, museum catalogs, and travel narratives,photographic and hand-drawn images of Egypt, andinteractive GIS (Geographic Information Systems) maps of Egypt and Cyprus." No downloadable GIS data, but lots of scanned historic maps that can be georeferenced in GIS or Google Earth.</p>
+        <h6 style="font-weight:bold;"><a href="http://ecom.gov.il/Mapi/homepage_en.aspx" target="_blank">Survey of Israel online data store</a></h6>
+        <p>Including historical maps, travel maps, topographic maps, town maps and many more. Need to purchase. (the main web site for the Survey of Israel is <a href="http://www.mapi.gov.il/" target=_blank>http://www.mapi.gov.il/</a>) (Hebrew)</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Transportation" tag="h7" swaptitle="▾ Transportation" rel=”this-highlander]
+       <h6 style="font-weight:bold;"><a href="http://www.bostonmpo.org/" target="_blank">Boston Metropolitan Planning Organization (MPO)</a></h6>
+       <p>The regional group responsible for carrying out the Federally mandated regional transportation planning process. The Boston MPO has links to traffic count data and contacts for some other transportation related data for the Boston metropolitan region, as well as research links. Note: for any metropolitan region, the region's MPO is a good place to start looking for transportation data at the regiona/urban level.</p>
+       <h6 style="font-weight:bold;"><a href="http://www.bts.gov/publications/national_transportation_atlas_database/" target="_blank">Bureau of Transportation Statistics - National Transportation Atlas Database</a></h6>
+       <p>Download a variety of transportation infrastructure data in GIS format.</p>
+       <h6 style="font-weight:bold;"><a href="http://www.gis.fhwa.dot.gov/gisData.asp" target="_blank">Federal Highway Administration (US) - GIS Data</a></h6>
+       <p>A good list of transportation GIS data sources.</p>
+       <h6 style="font-weight:bold;"><a href="http://www.trbcensus.com/" target="_blank">Transportation Research Bureau</a></h6>
+       <p>Census Data for Transportation Planning.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ US Cities and Metropolitan Regions" tag="h7" swaptitle="▾ US Cities and Metropolitan Regions" rel=”this-highlander]
+       <h6 style="font-weight:bold;"><b>General Clearinghouse for Sites with City and Region Information:</b></h6>
+       <h6 style="font-weight:bold;"><a href="http://geodata.tufts.edu/" target="_blank">Tufts Geodata Portal</a></h6>
+       <p>Try searching for a specific city</p>
+       <h6 style="font-weight:bold;"><a href="http://libguides.mit.edu/content.php?pid=347508&amp;sid=2843037" target="_blank">MIT - GIS - Find Data</a></h6>
+       <p>Their listings of <a href="http://libguides.mit.edu/content.php?pid=347508&amp;sid=2843952" target="_blank">GIS Data by State</a>. Includes many county and city GIS data sites as well.</p>
+       <h6 style="font-weight:bold;"><a href="http://libinfo.uark.edu/GIS/us.asp" target="_blank">University of Arkansas - Geospatial and Attribute Data Listing</a></h6>
+       <p>An excellent site for getting access to US state clearinghouses and other agencies serving geopatial data (also includes US Federal and international data).</p>
+       <h6 style="font-weight:bold;"><b>California</b></h6>
+       <h6 style="font-weight:bold;"><a href="http://www.sangis.org/" target="_blank">San Diego, CA - SanGIS</a></h6>
+       <p>Good download access and good metadata to a wealth of urban/metropolitan/environmental GIS data - provided by the City of San Diego, the county of San Diego, and the San Diego Association of Governments (SANDAG). You need to register first, but it is free.</p>
+       <h6 style="font-weight:bold;"><a href="http://www.sandag.org/" target="_blank">San Diego - San Diego Association of Governments</a></h6>
+       <p>There are a few GIS data sets here not easily found on the SanGIS site, including land use.</p>
+       <p>Note: additional data can be downloaded from the Bay Area's <a href="http://www.mtc.ca.gov/maps_and_data/GIS/data.htm" target="_blank">Metropolitan Transportation Commission's Maps and Data section</a></p>
+       <h6 style="font-weight:bold;"><b>Connecticut</b></h6>
+       <h6 style="font-weight:bold;"><a href="http://clear.uconn.edu/" target="_blank">CLEAR (Center for Land Use Education and Research)</a></h6>
+       <p>University of Connecticut - good site with both land use research project information and GIS data downloads, mostly focusing on Connecticut, including a number of coastal zone/riparian research projects.</p>
+       <h6 style="font-weight:bold;"><a href="http://www.ct.gov/dep/cwp/view.asp?a=2698&amp;q=322898" target="_blank">Connecticut Department of Environmental Protection</a></h6>
+       <p>GIS Data Download Site</p>
+       <h6 style="font-weight:bold;"><a href="http://ctgis.uconn.edu/" target="_blank">Connecticut GIS User to User Network</a></h6>
+       <p>Good GIS community site for Connecticut organizations using GIS</p>
+       <h6 style="font-weight:bold;"><b>Louisiana</b></h6>
+       <h6 style="font-weight:bold;"><a href="http://data.nola.gov/" target="_blank">City of New Orleans GIS</a></h6>
+       <p>Includes damage assessment and permits for reconstruction from Hurricane Katrina</p>
+       <h6 style="font-weight:bold;"><a href="http://www.gnocdc.org/" target="_blank">Greater New Orleans Community Data Center</a></h6>
+       <p>A non-profit that focuses on providing data for non-profits</p>
+       <h6 style="font-weight:bold;"><a href="http://doa.louisiana.gov/lgisc/" target="_blank">Louisiana GIS Council</a></h6>
+       <h6 style="font-weight:bold;"><b>Massachusetts and New England</b></h6>
+       <h6 style="font-weight:bold;"><a href="http://www.metrobostondatacommon.org" target="_blank">Boston Metropolitan Area - Metro Boston Data Commons</a></h6>
+       <p>New (2007) site from the Metropolitan Area Planning Council (MAPC) and the Boston Indicators Project. Includes a variety of socio-economic and other data regarding 101 cities and towns in Eastern Massachusetts. The main tool is an online mapper, but it also has tools to extract GIS shape files and Excel tables.</p>
+       <h6 style="font-weight:bold;"><b>Oregon</b></h6>
+       <h6 style="font-weight:bold;"><a href="http://www.oregonmetro.gov/index.cfm/go/by.web/id=24876" target="_blank">Portland Metro Data Resource Center</a></h6>
+       <p>Metro, a regional government, maintains an extensive GIS database with information concerning the Portland metropolitan area. For the most part it is not downloadable for free, but it has good documenation, online viewing, and is an excellent example of a well-organized metropolitan GIS. Also note that students may purchase a CD of the RLIS main data set for $65.</p>
+       <h6 style="font-weight:bold;"><b>Texas</b></h6>
+       <h6 style="font-weight:bold;"><a href="http://www.tnris.org/" target="_blank">Texas Natural Resources Information System (TNRIS)</a></h6>
+       <p>Texas state GIS data clearinghouse, includes Border Information Center</p>
+       <h6 style="font-weight:bold;">Austin</h6>
+       <p><a href="http://www.capcog.org/information-clearinghouse/" target="_blank">Capital Area Council of Governments (CAPCOG)</a>: downloadable, well-organized data for the Austin Metropolitan Region</p>
+       <h6 style="font-weight:bold;">Houston</h6>
+       <p><a href="http://library.rice.edu/services/gdc/gis-data/gis-data/gis-data-houston" target="_blank">Rice University - GIS Data for Houston</a>: this site from Rice keeps track of where to find Houston data, most of which is either available for free download or at very low cost.</p>
+       <h6 style="font-weight:bold;"><b>Washington, DC</b></h6>
+       <h6 style="font-weight:bold;"><a href="http://dcgis.dc.gov/" targt="_blank">District of Columbia Geographic Information System</a></h6>
+       <p>A wealth of free dowloadable GIS data layers (ESRI shape file format), very well documented. Go to the GIS Data Search link - the search tool is a bit clunky, but you can also browse by alphabet letter.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Water" tag="h7" swaptitle="▾ Water" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><b>United States</b></h6>
+        <h6 style="font-weight:bold;"><a href="http://www.mrlc.gov/" target="_blank">Impervious Cover - Multi-Resolution Land Cover Data</a> (US government agencies)</h6>
+        <p>2001 land cover, impervious cover, and canopy cover data set produced by the MRLC Consortium of US federal agencies (EPA, USGS, US Forest Service, etc.). The 1992 landcover data set is complete for the entire US. Production of 2001 landcover, impervious cover, and canopy cover is underway - see Production Status link for a map of what stage each region is in. Note: although the production status may show an area complete, you may have to go to the FTP data download link to actually get the data. The Dynamic Map download choice does not seem to be updated regularly. Read the metadata to understand the attribute information. The data is a raster data set with 30 meter pixels.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.ce.utexas.edu/prof/maidment/" target="_blank">Learning about using hydrography data in GIS</a></h6>
+        <p>This is Professor David Maidment's web site at the Center for Research in Water Resources at the University of Texas at Austin. Dr. Maidment is a hydrologist and an international expert in the use of GIS in hydrologic analysis. Under his classes link, you can find his course web sites, all of which have exercises and data sets focusing on using water resource information in GIS.&nbsp; See especially the links for <em>GIS in Water Resources</em>. There are also videos of his lectures available. Note: the web site doesn't seem to work with Mozilla, so try it with Internet Explorer.</p>
+        <h6 style="font-weight:bold;"><a href="http://woodshole.er.usgs.gov/project-pages/cvi/" target="_blank">National Assessment of Coastal Vulnerability to Sea Level Rise (USGS Woods Hole Field Center)</a></h6>
+        <p>Includes links to a preliminary GIS data set that attempts to give a national overview of coastal vulnerabiliy to sea level rise, plus a number of reports and regional studies.</p>
+        <h6 style="font-weight:bold;"><a href="http://nhd.usgs.gov/" target="_blank">National Hydrography Data Set (USGS)</a></h6>
+        <p>From the NHD web site: "The National Hydrography Dataset (NHD) is a comprehensive set of digital spatial data that contains information about surface water features such as lakes, ponds, streams, rivers, springs and wells. Within the NHD, surface water features are combined to form "reaches," which provide the framework for linking water-related data to the NHD surface water drainage network. These linkages enable the analysis and display of these water-related data in upstream and downstream order.</p>
+        <h6 style="font-weight:bold;"><a href="http://www.fws.gov/nwi/" target="_blank">National Wetland Inventory (US Fish and Wildlife Service)</a></h6>
+        <p>Wetlands mapping for the entire US from USGS 1:24,000 topographic maps - note that data can be downloaded from this US Fish and Wildlife Service web site, but many states also make these data sets available pre-formatted in state plane coordinate systems (e.g., see MassGIS National Wetland Inventory site - <a href="http://www.mass.gov/mgis/nwi.htm" target="_blank">http://www.mass.gov/mgis/nwi.htm</a>)</p>
+        <h6 style="font-weight:bold;"><a href="http://prism.oregonstate.edu/" target="_blank">PRISM (Oregon State University)</a></h6>
+        <p>Good site for precipitation and other climate data. From the web site: "This OSU PRISM Group web site provides access to the highest-quality spatial climate data sets currently available. These data sets were created using the PRISM climate mapping system, developed by Dr. Christopher Daly, PRISM Group director. PRISM is unique in that it incorporates a spatial climate knowledge base that accounts for rain shadows, temperature inversions, coastal effects, and more in the climate mapping process."</p>
+        <h6 style="font-weight:bold;"><a href="http://water.usgs.gov/wsc/links.html" target="_blank">USGS - Science in your Watershed - Links by Watershed</a></h6>
+        <p>Great site for specifying a watershed (e.g., Charles River) and retrieving a comprehensive listing of USGS data for that watershed, including stream flow, water use, GIS data, etc. - for example, see the links for the Charles River watershed - <a href="http://water.usgs.gov/lookup/getwatershed?01090001/www/cgi-bin/lookup/getwatershed" target="_blank">http://water.usgs.gov/lookup/getwatershed?01090001/www/cgi-bin/lookup/getwatershed</a></p>
+        <h6 style="font-weight:bold;"><a href="http://water.usgs.gov/maps.html" target="_blank">USGS - Water Resources Division Maps and GIS Information</a></h6>
+        <p>Lots of links to US water data - under the full list link, you'll find dozens of miscellaneous data sets ranging from hydrological basins to geology to water quality to demographic data.</p>
+        <h6 style="font-weight:bold;"><b>Global Water Data Sets</b></h6>
+        <h6 style="font-weight:bold;"><a href="http://grdc.bafg.de/" target="_blank">Global Runoff Data Center</a></h6>
+        <p>Digital world-wide repository of river discharge data, including mean, minimum, maximum monthly discharges and time series of most major rivers of the world, plus GIS data for basins and river networks. Data requesters must identify themselves first, agree to usage requirements, and wait for approval.</p>
+        <h6 style="font-weight:bold;"><a href="http://eros.usgs.gov/" target="_blank">Hydro 1K</a></h6>
+        <p>Hydrographic data derived from the GTOPO 1 kilometer digital elevation models. These are 1 km DEM-derived&nbsp; hydrographic data (elevatioin, slope, streams, aspect) - not highly accurate but better than nothing and available for the entire world in shape/grid format (downloads as .tar file)</p>
+        <h6 style="font-weight:bold;"><a href="http://hydrosheds.cr.usgs.gov/" target="_blank">USGS - Hydrosheds</a></h6>
+        <p>Digital elevation models and hydrologic base data derived from the Shuttle Radar Topography Mission and other sources at 90 meter grid cell resolution - more detailed than the Hydro 1K data, but not available for the whole world yet (as of 10/18/06, South America is complete). See the web site for details on how the SRTM and other data sources were processed, and for status of other areas and expected completion dates.</p>
+        <h6 style="font-weight:bold;"><a href="http://www-naweb.iaea.org/napc/ih/index.html" target="_blank">Water Resources Programme</a> - Isotope Hydrology (Internationa Atomic Energy Agency)</h6>
+        <p>Information, including GIS-based online mapping and data download sets, focusing on exploring the "fingerprints" of water for understanding sources, movements, rates of recharge, pathways, etc.</p>
+    [/expandsub1]
+<br>
+    [expandsub1 title="▸ Weather" tag="h7" swaptitle="▾ Weather" rel=”this-highlander]
+        <h6 style="font-weight:bold;"><a href="http://www.weather.gov/gis/" target="_blank">National Weather Service Data Available in GIS Format</a> - NOAA</h6>
+    [/expandsub1]    
+[/expand]
